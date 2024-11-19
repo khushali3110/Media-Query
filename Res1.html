@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .card{
+            font-size: 20px;
+            /* font-style: italic; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .box{
+            
+            width: 250px;  
+            height: 250px; 
+            margin-bottom: 20px;
+            align-items: center;  
+        
+        }
+
+        .container{
+            margin: 0px 10px;
+            display: flex;
+            padding: 30px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            justify-content:space-evenly;
+            background-color: darkslategrey;
+            width: 100%;
+        }
+
+        .box{
+            padding: 20px; 
+            background:linear-gradient(hotpink,pink);
+           
+        }
+
+        .box h2{
+           text-align: center;
+           padding: 5px;
+        }
+
+        .box p{
+            text-align: center;
+            padding: 5px;
+        }
+
+        .btn{
+            text-align: center;   
+            padding: 5px; 
+        }
+    
+        button{
+            padding: 9px;
+            border-radius: 5px;
+            background-color: black;
+            color: aliceblue;
+            transition: 1s ease-in-out;
+        }
+
+        button:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .fa-brands{
+        font-size:50px ;
+        justify-content: center ;
+        display: flex ;
+            
+        }
+
+        .fa-youtube{
+            color: rgb(209, 48, 48);
+        }
+
+        .fa-instagram{
+            color: rgb(47, 0, 255);
+           
+        }
+    
+        .img1{
+            height: 50px;
+            width: 50px;
+            margin-left: 40%;
+        }
+
+        .fa-twitter{
+            color: blue;
+        }
+        @media (min-width: 294px) and (max-width: 838px) {
+            .container{
+                width: 100%;
+                flex-wrap: wrap; 
+                justify-content: space-evenly; 
+                height: fit-content;
+                background-color: indigo;
+            }
+
+            
+
+            .box{
+                margin: 10px;
+                width: 60%;   
+            }
+        }
+
+       
+        
+
+
+    </style>
+</head>
+<body>
+
+    
+  
+    <div class="card">
+     <h3>RESPONSIVE CARDS CSS</h3>
+    </div>  
+
+    <div class="container">
+        <div class="box">
+            <i class="fa-brands fa-twitter"></i> 
+            <h2>TWITTER</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <div class="btn">
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./instagram.svg"  class="img1">
+            <h2>INSTAGRAM</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <div class="btn">
+                <button>READ MORE</button>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-brands fa-youtube"></i>
+            <h2>YOUTUBE</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <div class="btn">
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

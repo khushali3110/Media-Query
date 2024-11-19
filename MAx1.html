@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        /* header */
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            height: 70px;
+            width: 100%;
+            background-color: cornflowerblue;
+            color: #fff;
+            padding-top: 20px;
+            padding-right: 30px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    
+        .menu-list{
+            display: flex;
+        }
+
+       .menu-list a{
+            text-decoration: none;
+        } 
+
+        .menu-list a>li{
+            list-style: none;
+            margin-left: 25px;
+            margin-right: 3px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        
+
+        /* hero section */
+
+        .main{
+            background-color: lawngreen;
+            width: auto;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .box{
+            border-radius: 5px;
+            height: 280px;
+            width: 300px;
+           
+            margin: 10px;
+            text-align: center;
+            background: linear-gradient(pink , hotpink);
+            padding: 30px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .box h3{
+            padding: 10px;
+        }
+
+        .fa-sharp-duotone{
+            font-size: 50px;
+            padding: 20px;
+            padding-top: 40px;
+        } 
+
+        /* footer */
+
+    footer{
+        height: 100px;
+        width: 100vw;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+    
+       
+    }
+
+    footer h2{
+        text-align: center;
+    }
+
+    .row{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .col a{
+        color: black;
+        text-decoration: none;
+        display: flex;
+        padding-left: 15px;
+        justify-content: space-around;
+        font-style: italic;
+        color: #fff;
+    }
+
+    .fa-user-plus{
+        padding-left: 40px;
+    }
+
+   
+    @media (min-width: 749px){
+        .fa-bars{
+            display: none;
+        }
+    }
+   
+   
+    @media (max-width: 749px) {
+
+        .navbar{
+            width: 100%;
+        }
+
+       .menu-list{
+        display: none;
+       }
+
+      .fa-bars{
+
+        font-size: 30px;
+      }
+
+      /* css for main section */
+
+      .main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+      }
+
+      .box{
+        width: 100%;
+      }
+       
+      /* css for footer */
+
+      footer{
+        height: fit-content;
+      }
+
+      .row{
+        flex-wrap: wrap;
+        
+      }
+
+      .col{
+        width: 100%;
+        font-size: 40px;
+      }
+
+     .col a{
+        color: black;
+     }
+        
+
+    
+    
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+      <div class="navbar">
+        <div class="logo">RnW</div>
+        <ul class="menu-list">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Project</li></a>
+            <a href=""><li>Service</li></a>
+            <a href=""><li>content</li></a>
+         </ul>
+
+         <div class="hemburger">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+      </div>
+
+    <!-- hero section  -->
+
+    <div class="main">
+        
+       <div class="box box1">
+        <i class="fa-sharp-duotone fa-solid fa-mountain-sun"></i>
+         <h3>lorem</h3>
+         <p>Lorem ipsum dolor sit amet.</p>
+       </div>
+        
+       
+       <div class="box box2">
+        <i class="fa-sharp-duotone fa-solid fa-crown"></i>
+        <h3>lorem</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      
+      <div class="box box3">
+        <i class="fa-sharp-duotone fa-solid fa-user-plus"></i>
+        <h3>lorem</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+
+        <div><h2>footer-heading</h2></div>
+       
+        <div class="row">
+            
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+           
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+           
+            <div class="col">
+                 <a href="#">FAQ</a>
+                 <a href="#">Investor Relations</a>
+                 <a href="#">Privacy</a>
+                 <a href="#">Speed Test</a>
+            </div>
+     </div>
+    </footer>
+</body>
+</html>

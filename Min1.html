@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #f4f4f4;
+        }
+
+        .footer-text {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #d3d3d3;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .form-container input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #c70039;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff5733;
+        }
+
+        @media (min-width: 768px) {
+        .footer-heading {
+            font-size: 30px;
+        }
+
+        .footer-text {
+            font-size: 18px;
+        }
+
+        .form-container input[type="email"] {
+            width: 400px;
+        }
+
+        .form-container button {
+            font-size: 18px;
+            padding: 12px 25px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 15px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        footer {
+            padding: 60px 40px;
+        }
+
+        .footer-heading {
+            font-size: 36px;
+        }
+
+        .footer-text {
+            font-size: 20px;
+        }
+
+        .form-container input[type="email"] {
+            width: 500px;
+        }
+
+        .form-container button {
+            font-size: 20px;
+            padding: 15px 30px;
+        }
+
+        .social-icons a {
+            font-size: 26px;
+            margin: 0 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2 class="footer-heading">Stay Connected</h2>
+        <p class="footer-text">Subscribe to our newsletter to stay updated with the latest news and offers.</p>
+        <div class="form-container">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
